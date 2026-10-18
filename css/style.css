@@ -1,15 +1,9 @@
-/* =========================================================
-   Загальні налаштування
-   ========================================================= */
-
-/* width/height включають padding і border — так легше рахувати розміри карток */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* ПР5, п.2: обмеження ширини контейнера, центрування, відступи справа і зліва */
 body {
     max-width: 80em;
     margin: 0 auto;
@@ -49,7 +43,6 @@ p {
     margin: 0 0 12px;
 }
 
-/* Кнопка-посилання */
 .btn {
     display: inline-block;
     margin: 10px 0 20px;
@@ -68,9 +61,6 @@ p {
     color: #FFFFFF;
 }
 
-/* =========================================================
-   ПР5, п.3: шапка сайту
-   ========================================================= */
 .site-header {
     padding: 20px 0;
     border-bottom: 1px solid #333333;
@@ -114,16 +104,10 @@ p {
     margin-right: 12px;
 }
 
-/* =========================================================
-   ПР5, п.4: розділи сайту — проміжок між розділами 40px
-   (вертикальні margin сусідніх розділів зливаються:
-   40px знизу + 40px зверху = 40px, а не 80px)
-   ========================================================= */
 section {
     margin: 40px 0;
 }
 
-/* Банер: текст зліва, зображення справа */
 .banner {
     display: flow-root;
 }
@@ -145,7 +129,6 @@ section {
     border-radius: 260px 260px 0 0;
 }
 
-/* Наші спеціальності: картки */
 .specialty-card {
     display: inline-block;
     vertical-align: top;
@@ -167,7 +150,6 @@ section {
     font-weight: bold;
 }
 
-/* Якщо в числах: картки, границя зліва в усіх, крім останньої */
 .stat {
     display: inline-block;
     vertical-align: top;
@@ -189,7 +171,6 @@ section {
     margin: 0;
 }
 
-/* Відгуки випускників: картки */
 .review {
     display: inline-block;
     vertical-align: top;
@@ -225,7 +206,6 @@ section {
     margin: 10px 0 0;
 }
 
-/* Наука та інновації: зображення зліва, текст справа */
 .science {
     display: flow-root;
 }
@@ -237,7 +217,6 @@ section {
     border-radius: 14px;
 }
 
-/* Нам довіряють */
 .partners {
     padding: 40px 20px;
     border-radius: 20px;
@@ -252,7 +231,6 @@ section {
     vertical-align: middle;
 }
 
-/* Таблиці освітньої програми */
 .program-title {
     margin-top: 30px;
 }
@@ -285,7 +263,6 @@ tfoot td {
     font-weight: bold;
 }
 
-/* Форма вступу */
 .admission__img {
     display: inline-block;
     vertical-align: top;
@@ -329,7 +306,6 @@ tfoot td {
     cursor: pointer;
 }
 
-/* Контакти */
 .contacts {
     text-align: center;
 }
@@ -338,7 +314,6 @@ tfoot td {
     font-style: normal;
 }
 
-/* Новини: границя зліва в усіх картках, крім останньої */
 .news__video {
     display: block;
     margin: 0 auto 30px;
@@ -384,9 +359,6 @@ tfoot td {
     text-align: center;
 }
 
-/* =========================================================
-   ПР5, п.5: нижній колонтитул
-   ========================================================= */
 .site-footer {
     padding: 40px 0;
     border-top: 1px solid #333333;
