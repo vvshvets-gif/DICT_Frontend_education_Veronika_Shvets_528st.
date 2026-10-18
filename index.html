@@ -10,12 +10,12 @@
 </head>
 <body>
     <!-- Верхній колонтитул -->
-    <header>
-        <a href="index.html">
+    <header class="site-header">
+        <a class="logo" href="index.html">
             <img src="images/logo.svg" alt="Логотип кафедри ІКТ" title="Кафедра ІКТ ХАІ">
         </a>
-        <nav>
-            <ul>
+        <nav class="main-nav">
+            <ul class="main-menu">
                 <li><a href="#specialties">Спеціальності</a></li>
                 <li><a href="#science">Наука</a></li>
                 <li><a href="#news">Новини</a></li>
@@ -23,10 +23,10 @@
                 <li><a href="#contact">Контакти</a></li>
             </ul>
         </nav>
-        <a href="#search">
+        <a class="search" href="#search">
             <img src="images/icon-search.svg" alt="Пошук по сайту" title="Пошук" width="24" height="24">
         </a>
-        <ul>
+        <ul class="lang-switch">
             <li><a href="index.html" hreflang="uk" title="Українська">UA</a></li>
             <li><a href="index-en.html" hreflang="en" title="English">EN</a></li>
         </ul>
@@ -34,14 +34,14 @@
 
     <main>
         <!-- Банер -->
-        <section>
+        <section class="banner">
+            <img class="banner__img" src="images/banner.svg" alt="Студент з ноутбуком" title="Навчайся на кафедрі ІКТ" width="520" height="560">
             <h1>Створюй майбутнє. Тут і зараз!</h1>
             <p>
                 Вибери не просто освіту - обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї
                 стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!
             </p>
-            <a href="#contact">Хочу поступити</a>
-            <img src="images/banner.svg" alt="Студент з ноутбуком" title="Навчайся на кафедрі ІКТ" width="520" height="560">
+            <a class="btn" href="#admission">Хочу поступити</a>
         </section>
 
         <!-- Наші спеціальності -->
@@ -51,17 +51,17 @@
                 Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних та інформаційних технологій за двома
                 напрямками 172 - Електронні комунікації та радіотехніка і 126 - Інформаційні системи та технології.
             </p>
-            <article>
+            <article class="specialty-card">
                 <h3>126</h3>
                 <p>«Інформаційні системи і технології»</p>
             </article>
-            <article>
+            <article class="specialty-card">
                 <h3>172</h3>
                 <p>«Електронні комунікації та радіотехніка»</p>
             </article>
 
             <!-- Освітня програма -->
-            <h3>Освітня програма «Інжиніринг і програмування інфокомунікаційних систем»</h3>
+            <h3 class="program-title">Освітня програма «Інжиніринг і програмування інфокомунікаційних систем»</h3>
             <table>
                 <caption>1 курс, 1 семестр</caption>
                 <thead>
@@ -136,58 +136,62 @@
         </section>
 
         <!-- Якщо в числах -->
-        <section>
+        <section class="stats">
             <h2>Якщо в числах</h2>
-            <article>
+            <article class="stat">
                 <h3>18</h3>
                 <p>Досвідчених викладачів</p>
             </article>
-            <article>
+            <article class="stat">
                 <h3>65</h3>
                 <p>Навчальних дисциплін</p>
             </article>
-            <article>
+            <article class="stat">
                 <h3>1200+</h3>
                 <p>Талановитих випускників</p>
             </article>
-            <article>
+            <article class="stat">
                 <h3>∞</h3>
                 <p>Унікального досвіду</p>
             </article>
         </section>
 
-        <!-- Відгуки випускників -->
-        <section>
+        <!-- Відгуки випускників (демонстраційний контент: імена та тексти вигадані) -->
+        <section class="reviews" id="reviews">
             <h2>#DICTExperience</h2>
-            <article>
+            <article class="review">
                 <blockquote>
-                    <p>«Текст відгуку випускника. Тут буде розповідь про навчання на кафедрі та про те, як отримані знання допомогли в кар’єрі.»</p>
+                    <p>«Кафедра дала мені міцну базу з мереж: уже на третьому курсі я налаштовував обладнання на практиці, а після випуску одразу отримав офер.»</p>
                 </blockquote>
-                <h3>Ім’я Прізвище</h3>
-                <p>Посада, компанія</p>
+                <img class="review__avatar" src="images/avatar-am.svg" alt="Андрій Мельник" width="48" height="48">
+                <h3>Андрій Мельник</h3>
+                <p>Network Engineer, телеком-оператор</p>
             </article>
-            <article>
+            <article class="review">
                 <blockquote>
-                    <p>«Текст відгуку випускника. Короткий опис досвіду навчання, практики та участі в проєктах кафедри.»</p>
+                    <p>«Python тут вивчають з першого курсу, тож до диплому в мене вже було портфоліо з реальних проєктів. Викладачі завжди готові допомогти й підказати напрямок розвитку.»</p>
                 </blockquote>
-                <h3>Ім’я Прізвище</h3>
-                <p>Посада, компанія</p>
+                <img class="review__avatar" src="images/avatar-mt.svg" alt="Марія Ткаченко" width="48" height="48">
+                <h3>Марія Ткаченко</h3>
+                <p>Python Developer, IT-компанія</p>
             </article>
-            <article>
+            <article class="review">
                 <blockquote>
-                    <p>«Текст відгуку випускника про викладачів, лабораторії та можливості для розвитку.»</p>
+                    <p>«Найцінніше — лабораторії та робота з Linux. Те, що ми робили на практичних заняттях, я щодня використовую в роботі.»</p>
                 </blockquote>
-                <h3>Ім’я Прізвище</h3>
-                <p>Посада, компанія</p>
+                <img class="review__avatar" src="images/avatar-db.svg" alt="Дмитро Бондар" width="48" height="48">
+                <h3>Дмитро Бондар</h3>
+                <p>DevOps Engineer, продуктова IT-компанія</p>
             </article>
-            <article>
+            <article class="review">
                 <blockquote>
-                    <p>«Текст відгуку випускника. Враження від навчання та поради майбутнім студентам.»</p>
+                    <p>«Атмосфера на кафедрі — як у команді: спільні проєкти, хакатони, підтримка старшокурсників. Раджу всім, хто хоче будувати кар’єру в IT.»</p>
                 </blockquote>
-                <h3>Ім’я Прізвище</h3>
-                <p>Посада, компанія</p>
+                <img class="review__avatar" src="images/avatar-os.svg" alt="Олена Шевчук" width="48" height="48">
+                <h3>Олена Шевчук</h3>
+                <p>QA Automation Engineer, аутсорсингова компанія</p>
             </article>
-            <figure>
+            <figure class="audio-review">
                 <figcaption>Аудіовідгук випускника</figcaption>
                 <audio src="media/testimonial.mp3" controls>
                     Ваш браузер не підтримує елемент audio.
@@ -196,7 +200,8 @@
         </section>
 
         <!-- Наука та інновації -->
-        <section id="science">
+        <section class="science" id="science">
+            <img src="images/science.svg" alt="Аналітичні панелі з графіками" title="Наукові дослідження кафедри" width="520" height="420">
             <h2>Наука та інновації</h2>
             <h3>Від аудиторії — до реального проєкту</h3>
             <p>
@@ -205,26 +210,25 @@
                 ініціативи, де кожен може реалізувати себе ще під час навчання. Дослідження, що перетворюються на продукт —
                 саме тут це можливо.
             </p>
-            <a href="#science">Дізнатись більше</a>
-            <img src="images/science.svg" alt="Аналітичні панелі з графіками" title="Наукові дослідження кафедри" width="520" height="420">
+            <a class="btn" href="#science">Дізнатись більше</a>
         </section>
 
         <!-- Нам довіряють -->
-        <section>
+        <section class="partners">
             <h2>Нам довіряють</h2>
-            <img src="images/partner-nix.svg" alt="NIX" title="NIX" height="60">
-            <img src="images/partner-sigma.svg" alt="Sigma Software" title="Sigma Software" height="60">
-            <img src="images/partner-globallogic.png" alt="GlobalLogic" title="GlobalLogic" height="60">
-            <img src="images/partner-epam.svg" alt="EPAM" title="EPAM" height="60">
-            <img src="images/partner-softserve.svg" alt="SoftServe" title="SoftServe" height="60">
-            <img src="images/partner-dataart.svg" alt="DataArt" title="DataArt" height="60">
+            <img class="partners__logo" src="images/partner-nix.svg" alt="NIX" title="NIX" height="60">
+            <img class="partners__logo" src="images/partner-sigma.svg" alt="Sigma Software" title="Sigma Software" height="60">
+            <img class="partners__logo" src="images/partner-globallogic.png" alt="GlobalLogic" title="GlobalLogic" height="60">
+            <img class="partners__logo" src="images/partner-epam.svg" alt="EPAM" title="EPAM" height="60">
+            <img class="partners__logo" src="images/partner-softserve.svg" alt="SoftServe" title="SoftServe" height="60">
+            <img class="partners__logo" src="images/partner-dataart.svg" alt="DataArt" title="DataArt" height="60">
         </section>
 
         <!-- Форма зворотного зв'язку з абітурієнтами -->
-        <section id="admission">
+        <section class="admission" id="admission">
             <h2>Вступ 2026</h2>
-            <img src="images/admission.svg" alt="Рука відчиняє двері" title="Відчини двері у майбутнє" width="460" height="560">
-            <form action="#" method="post">
+            <img class="admission__img" src="images/admission.svg" alt="Рука відчиняє двері" title="Відчини двері у майбутнє" width="460" height="560">
+            <form class="admission__form" action="#" method="post">
                 <p>
                     <label for="name">Ваше ім’я та прізвище *</label><br>
                     <input type="text" id="name" name="name" placeholder="Ваша відповідь" autocomplete="name" required>
@@ -271,7 +275,7 @@
         </section>
 
         <!-- Контакти -->
-        <section id="contact">
+        <section class="contacts" id="contact">
             <h2>Контакти</h2>
             <address>
                 <p>61070, Харків, вул. Вадима Манька, 17</p>
@@ -287,43 +291,52 @@
         </section>
 
         <!-- Новини -->
-        <section id="news">
+        <section class="news" id="news">
             <h2>Новини</h2>
-            <video autoplay muted loop playsinline width="640" height="360" title="Відео новин кафедри">
+            <video class="news__video" autoplay muted loop playsinline width="640" height="360" title="Відео новин кафедри">
                 <source src="media/news.webm" type="video/webm">
                 <source src="media/news.mp4" type="video/mp4">
                 Ваш браузер не підтримує елемент video.
             </video>
-            <article>
-                <img src="images/news-1.svg" alt="Ілюстрація до новини про біотехнології" title="Новина 1">
-                <h3>Заголовок першої новини кафедри</h3>
-                <p>Короткий опис новини. Тут буде анонс події або досягнення студентів кафедри.</p>
-                <time datetime="2026-01-07">07 січня 2026</time>
+            <!-- Новини: демонстраційний контент -->
+            <article class="news-card">
+                <img class="news-card__img" src="images/news-1.svg" alt="Ілюстрація до новини про біотехнології" title="Новина 1">
+                <div class="news-card__content">
+                    <h3>День відкритих дверей кафедри ІКТ</h3>
+                    <p>Запрошуємо абітурієнтів та батьків познайомитися з викладачами, лабораторіями та освітніми програмами кафедри.</p>
+                    <time datetime="2026-01-07">07 січня 2026</time>
+                </div>
             </article>
-            <article>
-                <img src="images/news-2.svg" alt="Ілюстрація до новини про нові технології" title="Новина 2">
-                <h3>Заголовок другої новини кафедри</h3>
-                <p>Короткий опис новини. Тут буде анонс події або досягнення студентів кафедри.</p>
-                <time datetime="2026-01-07">07 січня 2026</time>
+            <article class="news-card">
+                <img class="news-card__img" src="images/news-2.svg" alt="Ілюстрація до новини про нові технології" title="Новина 2">
+                <div class="news-card__content">
+                    <h3>Стартувала вступна кампанія 2026</h3>
+                    <p>Розповідаємо, як подати документи, які бали НМТ потрібні та як отримати консультацію приймальної комісії.</p>
+                    <time datetime="2026-01-07">07 січня 2026</time>
+                </div>
             </article>
-            <article>
-                <img src="images/news-3.svg" alt="Ілюстрація до новини про мікроелектроніку" title="Новина 3">
-                <h3>Заголовок третьої новини кафедри</h3>
-                <p>Короткий опис новини. Тут буде анонс події або досягнення студентів кафедри.</p>
-                <time datetime="2026-01-07">07 січня 2026</time>
+            <article class="news-card">
+                <img class="news-card__img" src="images/news-3.svg" alt="Ілюстрація до новини про мікроелектроніку" title="Новина 3">
+                <div class="news-card__content">
+                    <h3>Студентський хакатон з інфокомунікацій</h3>
+                    <p>Команди студентів за 24 години створили прототипи IoT-рішень для розумного кампусу.</p>
+                    <time datetime="2026-01-07">07 січня 2026</time>
+                </div>
             </article>
-            <article>
-                <img src="images/news-4.svg" alt="Ілюстрація до новини про обробку сигналів" title="Новина 4">
-                <h3>Заголовок четвертої новини кафедри</h3>
-                <p>Короткий опис новини. Тут буде анонс події або досягнення студентів кафедри.</p>
-                <time datetime="2026-01-07">07 січня 2026</time>
+            <article class="news-card">
+                <img class="news-card__img" src="images/news-4.svg" alt="Ілюстрація до новини про обробку сигналів" title="Новина 4">
+                <div class="news-card__content">
+                    <h3>Нова лабораторія мережевих технологій</h3>
+                    <p>На кафедрі відкрилася лабораторія з сучасним мережевим обладнанням для практичних занять.</p>
+                    <time datetime="2026-01-07">07 січня 2026</time>
+                </div>
             </article>
-            <a href="#news">Більше новин</a>
+            <a class="btn btn--outline" href="#news">Більше новин</a>
         </section>
     </main>
 
     <!-- Нижній колонтитул -->
-    <footer>
+    <footer class="site-footer">
         <address>
             <p>61070, Харків, вул. Вадима Манька, 17</p>
             <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
