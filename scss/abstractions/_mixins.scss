@@ -1,0 +1,38 @@
+@mixin card {
+    padding: $base-padding;
+    border-radius: 20px;
+    border: 1px solid $grey;
+}
+
+@mixin divider($color: $red) {
+    border-right: 1px solid $color;
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+@mixin inline-column($width) {
+    display: inline-block;
+    vertical-align: top;
+    width: $width;
+}
+
+@mixin button($bg: $red, $color: $white) {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 1px solid $red;
+    border-radius: 4px;
+    background-color: $bg;
+    color: $color;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@mixin media-down($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}

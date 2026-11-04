@@ -1,0 +1,43 @@
+#feedbacks {
+    .cards-wrapper {
+        .card {
+            @include card;
+            @include inline-column(23.5%);
+            margin: 0 1% $base-padding 0;
+
+            blockquote {
+                margin: 0 0 16px;
+                font-size: 0.9em;
+            }
+
+            .avatar {
+                float: left;
+                margin-right: 12px;
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 1em;
+            }
+
+            p:last-child {
+                margin: 0;
+                color: $light-grey;
+                font-size: 0.8em;
+            }
+
+            @include media-down($desk) {
+                width: 48%;
+            }
+
+            @include media-down($widestmob) {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .audio-review {
+        margin: 10px 0 0;
+    }
+}

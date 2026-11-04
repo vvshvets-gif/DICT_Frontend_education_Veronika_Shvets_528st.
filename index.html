@@ -6,7 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage | Department of Information and  Communication Technologies</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header class="site-header">
@@ -48,14 +51,16 @@
                 Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних та інформаційних технологій за двома
                 напрямками 172 - Електронні комунікації та радіотехніка і 126 - Інформаційні системи та технології.
             </p>
-            <article class="specialty-card">
-                <h3>126</h3>
-                <p>«Інформаційні системи і технології»</p>
-            </article>
-            <article class="specialty-card">
-                <h3>172</h3>
-                <p>«Електронні комунікації та радіотехніка»</p>
-            </article>
+            <div class="cards-wrapper">
+                <article class="card">
+                    <h3>126</h3>
+                    <p>«Інформаційні системи і технології»</p>
+                </article>
+                <article class="card">
+                    <h3>172</h3>
+                    <p>«Електронні комунікації та радіотехніка»</p>
+                </article>
+            </div>
 
             <h3 class="program-title">Освітня програма «Інжиніринг і програмування інфокомунікаційних систем»</h3>
             <table>
@@ -131,60 +136,64 @@
             </p>
         </section>
 
-        <section class="stats">
+        <section id="in-numbers">
             <h2>Якщо в числах</h2>
-            <article class="stat">
-                <h3>18</h3>
-                <p>Досвідчених викладачів</p>
-            </article>
-            <article class="stat">
-                <h3>65</h3>
-                <p>Навчальних дисциплін</p>
-            </article>
-            <article class="stat">
-                <h3>1200+</h3>
-                <p>Талановитих випускників</p>
-            </article>
-            <article class="stat">
-                <h3>∞</h3>
-                <p>Унікального досвіду</p>
-            </article>
+            <div class="cards-wrapper">
+                <article class="card">
+                    <h3>18</h3>
+                    <p>Досвідчених викладачів</p>
+                </article>
+                <article class="card">
+                    <h3>65</h3>
+                    <p>Навчальних дисциплін</p>
+                </article>
+                <article class="card">
+                    <h3>1200+</h3>
+                    <p>Талановитих випускників</p>
+                </article>
+                <article class="card">
+                    <h3>∞</h3>
+                    <p>Унікального досвіду</p>
+                </article>
+            </div>
         </section>
 
-        <section class="reviews" id="reviews">
+        <section id="feedbacks">
             <h2>#DICTExperience</h2>
-            <article class="review">
-                <blockquote>
-                    <p>«Кафедра дала мені міцну базу з мереж: уже на третьому курсі я налаштовував обладнання на практиці, а після випуску одразу отримав офер.»</p>
-                </blockquote>
-                <img class="review__avatar" src="images/avatar-am.svg" alt="Андрій Мельник" width="48" height="48">
-                <h3>Андрій Мельник</h3>
-                <p>Network Engineer, телеком-оператор</p>
-            </article>
-            <article class="review">
-                <blockquote>
-                    <p>«Python тут вивчають з першого курсу, тож до диплому в мене вже було портфоліо з реальних проєктів. Викладачі завжди готові допомогти й підказати напрямок розвитку.»</p>
-                </blockquote>
-                <img class="review__avatar" src="images/avatar-mt.svg" alt="Марія Ткаченко" width="48" height="48">
-                <h3>Марія Ткаченко</h3>
-                <p>Python Developer, IT-компанія</p>
-            </article>
-            <article class="review">
-                <blockquote>
-                    <p>«Найцінніше — лабораторії та робота з Linux. Те, що ми робили на практичних заняттях, я щодня використовую в роботі.»</p>
-                </blockquote>
-                <img class="review__avatar" src="images/avatar-db.svg" alt="Дмитро Бондар" width="48" height="48">
-                <h3>Дмитро Бондар</h3>
-                <p>DevOps Engineer, продуктова IT-компанія</p>
-            </article>
-            <article class="review">
-                <blockquote>
-                    <p>«Атмосфера на кафедрі — як у команді: спільні проєкти, хакатони, підтримка старшокурсників. Раджу всім, хто хоче будувати кар’єру в IT.»</p>
-                </blockquote>
-                <img class="review__avatar" src="images/avatar-os.svg" alt="Олена Шевчук" width="48" height="48">
-                <h3>Олена Шевчук</h3>
-                <p>QA Automation Engineer, аутсорсингова компанія</p>
-            </article>
+            <div class="cards-wrapper">
+                <article class="card">
+                    <blockquote>
+                        <p>«Кафедра дала мені міцну базу з мереж: уже на третьому курсі я налаштовував обладнання на практиці, а після випуску одразу отримав офер.»</p>
+                    </blockquote>
+                    <img class="avatar" src="images/avatar-am.svg" alt="Андрій Мельник" width="48" height="48">
+                    <h3>Андрій Мельник</h3>
+                    <p>Network Engineer, телеком-оператор</p>
+                </article>
+                <article class="card">
+                    <blockquote>
+                        <p>«Python тут вивчають з першого курсу, тож до диплому в мене вже було портфоліо з реальних проєктів. Викладачі завжди готові допомогти й підказати напрямок розвитку.»</p>
+                    </blockquote>
+                    <img class="avatar" src="images/avatar-mt.svg" alt="Марія Ткаченко" width="48" height="48">
+                    <h3>Марія Ткаченко</h3>
+                    <p>Python Developer, IT-компанія</p>
+                </article>
+                <article class="card">
+                    <blockquote>
+                        <p>«Найцінніше — лабораторії та робота з Linux. Те, що ми робили на практичних заняттях, я щодня використовую в роботі.»</p>
+                    </blockquote>
+                    <img class="avatar" src="images/avatar-db.svg" alt="Дмитро Бондар" width="48" height="48">
+                    <h3>Дмитро Бондар</h3>
+                    <p>DevOps Engineer, продуктова IT-компанія</p>
+                </article>
+                <article class="card">
+                    <blockquote>
+                        <p>«Атмосфера на кафедрі — як у команді: спільні проєкти, хакатони, підтримка старшокурсників. Раджу всім, хто хоче будувати кар’єру в IT.»</p>
+                    </blockquote>
+                    <img class="avatar" src="images/avatar-os.svg" alt="Олена Шевчук" width="48" height="48">
+                    <h3>Олена Шевчук</h3>
+                    <p>QA Automation Engineer, аутсорсингова компанія</p>
+                </article>
+            </div>
             <figure class="audio-review">
                 <figcaption>Аудіовідгук випускника</figcaption>
                 <audio src="media/testimonial.mp3" controls>
@@ -282,43 +291,45 @@
 
         <section class="news" id="news">
             <h2>Новини</h2>
-            <video class="news__video" autoplay muted loop playsinline width="640" height="360" title="Відео новин кафедри">
+            <video class="news-video" autoplay muted loop playsinline width="640" height="360" title="Відео новин кафедри">
                 <source src="media/news.webm" type="video/webm">
                 <source src="media/news.mp4" type="video/mp4">
                 Ваш браузер не підтримує елемент video.
             </video>
-            <article class="news-card">
-                <img class="news-card__img" src="images/news-1.svg" alt="Ілюстрація до новини про біотехнології" title="Новина 1">
-                <div class="news-card__content">
-                    <h3>День відкритих дверей кафедри ІКТ</h3>
-                    <p>Запрошуємо абітурієнтів та батьків познайомитися з викладачами, лабораторіями та освітніми програмами кафедри.</p>
-                    <time datetime="2026-01-07">07 січня 2026</time>
-                </div>
-            </article>
-            <article class="news-card">
-                <img class="news-card__img" src="images/news-2.svg" alt="Ілюстрація до новини про нові технології" title="Новина 2">
-                <div class="news-card__content">
-                    <h3>Стартувала вступна кампанія 2026</h3>
-                    <p>Розповідаємо, як подати документи, які бали НМТ потрібні та як отримати консультацію приймальної комісії.</p>
-                    <time datetime="2026-01-07">07 січня 2026</time>
-                </div>
-            </article>
-            <article class="news-card">
-                <img class="news-card__img" src="images/news-3.svg" alt="Ілюстрація до новини про мікроелектроніку" title="Новина 3">
-                <div class="news-card__content">
-                    <h3>Студентський хакатон з інфокомунікацій</h3>
-                    <p>Команди студентів за 24 години створили прототипи IoT-рішень для розумного кампусу.</p>
-                    <time datetime="2026-01-07">07 січня 2026</time>
-                </div>
-            </article>
-            <article class="news-card">
-                <img class="news-card__img" src="images/news-4.svg" alt="Ілюстрація до новини про обробку сигналів" title="Новина 4">
-                <div class="news-card__content">
-                    <h3>Нова лабораторія мережевих технологій</h3>
-                    <p>На кафедрі відкрилася лабораторія з сучасним мережевим обладнанням для практичних занять.</p>
-                    <time datetime="2026-01-07">07 січня 2026</time>
-                </div>
-            </article>
+            <div class="news-cards">
+                <article class="news-card">
+                    <img src="images/news-1.svg" alt="Ілюстрація до новини про біотехнології" title="Новина 1">
+                    <div class="content-wrapper">
+                        <h3>День відкритих дверей кафедри ІКТ</h3>
+                        <p>Запрошуємо абітурієнтів та батьків познайомитися з викладачами, лабораторіями та освітніми програмами кафедри.</p>
+                        <time datetime="2026-01-07">07 січня 2026</time>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="images/news-2.svg" alt="Ілюстрація до новини про нові технології" title="Новина 2">
+                    <div class="content-wrapper">
+                        <h3>Стартувала вступна кампанія 2026</h3>
+                        <p>Розповідаємо, як подати документи, які бали НМТ потрібні та як отримати консультацію приймальної комісії.</p>
+                        <time datetime="2026-01-07">07 січня 2026</time>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="images/news-3.svg" alt="Ілюстрація до новини про мікроелектроніку" title="Новина 3">
+                    <div class="content-wrapper">
+                        <h3>Студентський хакатон з інфокомунікацій</h3>
+                        <p>Команди студентів за 24 години створили прототипи IoT-рішень для розумного кампусу.</p>
+                        <time datetime="2026-01-07">07 січня 2026</time>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="images/news-4.svg" alt="Ілюстрація до новини про обробку сигналів" title="Новина 4">
+                    <div class="content-wrapper">
+                        <h3>Нова лабораторія мережевих технологій</h3>
+                        <p>На кафедрі відкрилася лабораторія з сучасним мережевим обладнанням для практичних занять.</p>
+                        <time datetime="2026-01-07">07 січня 2026</time>
+                    </div>
+                </article>
+            </div>
             <a class="btn btn--outline" href="#news">Більше новин</a>
         </section>
     </main>

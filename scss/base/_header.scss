@@ -1,0 +1,55 @@
+header {
+    padding: $base-padding 0;
+    border-bottom: 1px solid $line-color;
+
+    .logo,
+    .main-nav,
+    .search,
+    .lang-switch {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .main-nav {
+        margin: 0 $section-gap;
+    }
+
+    .main-menu,
+    .lang-switch {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin: 0 12px;
+        }
+
+        a {
+            color: $white;
+            font-size: 0.85em;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    .search {
+        margin-right: 12px;
+    }
+
+    @include media-down($desk) {
+        .main-nav {
+            display: block;
+            margin: $small-padding 0;
+        }
+
+        .main-menu li:first-child {
+            margin-left: 0;
+        }
+    }
+}

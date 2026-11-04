@@ -1,0 +1,56 @@
+#news {
+    .news-video {
+        display: block;
+        margin: 0 auto 30px;
+        border-radius: $image-radius;
+    }
+
+    .news-cards {
+        .news-card {
+            @include inline-column(24.5%);
+            @include divider;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            .content-wrapper {
+                padding: 10px;
+
+                h3 {
+                    font-size: 1em;
+                }
+
+                p {
+                    color: $light-grey;
+                    font-size: 0.85em;
+                }
+
+                time {
+                    font-size: 0.75em;
+                }
+            }
+
+            @include media-down($tab) {
+                width: 49%;
+
+                &:nth-child(2n) {
+                    border-right: none;
+                }
+            }
+
+            @include media-down($widemob) {
+                width: 100%;
+                border-right: none;
+            }
+        }
+    }
+
+    .btn--outline {
+        display: block;
+        width: 200px;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,27 @@
+#in-numbers {
+    .cards-wrapper {
+        .card {
+            @include inline-column(24%);
+            @include divider;
+            padding: 10px;
+            text-align: center;
+
+            h3 {
+                margin: 0;
+                font-size: 3em;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            @include media-down($widestmob) {
+                width: 49%;
+
+                &:nth-child(2n) {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
