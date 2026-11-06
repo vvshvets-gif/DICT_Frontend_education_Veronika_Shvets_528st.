@@ -1,11 +1,12 @@
 header {
     padding: $base-padding 0;
-    border-bottom: 1px solid $line-color;
+    border-bottom: 1px solid var(--line-color);
 
     .logo,
     .main-nav,
     .search,
-    .lang-switch {
+    .lang-switch,
+    .theme-toggle {
         display: inline-block;
         vertical-align: middle;
     }
@@ -26,20 +27,42 @@ header {
         }
 
         a {
-            color: $white;
-            font-size: 0.85em;
+            color: var(--primary-text-color);
+            font-size: 12px;
             font-weight: bold;
             text-decoration: none;
             text-transform: uppercase;
 
             &:hover {
-                color: $red;
+                color: var(--red-color);
             }
         }
     }
 
     .search {
         margin-right: 12px;
+    }
+
+    .logo img,
+    .search img {
+        filter: var(--image-filter);
+    }
+
+    .theme-toggle {
+        margin-left: 12px;
+        padding: 4px 10px;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        background: transparent;
+        color: var(--primary-text-color);
+        font: inherit;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            border-color: var(--red-color);
+            color: var(--red-color);
+        }
     }
 
     @include media-down($desk) {

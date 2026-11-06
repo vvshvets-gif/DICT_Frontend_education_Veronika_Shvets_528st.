@@ -7,7 +7,6 @@
 
             blockquote {
                 margin: 0 0 16px;
-                font-size: 0.9em;
             }
 
             .avatar {
@@ -17,13 +16,13 @@
 
             h3 {
                 margin: 0;
-                font-size: 1em;
+                font-size: 16px;
             }
 
             p:last-child {
                 margin: 0;
-                color: $light-grey;
-                font-size: 0.8em;
+                color: var(--grey-color);
+                font-size: 12px;
             }
 
             @include media-down($desk) {
