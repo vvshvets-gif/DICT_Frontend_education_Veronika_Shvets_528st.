@@ -1,0 +1,89 @@
+body {
+    font-size: 14px;
+    font-family: $comfortaa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    line-height: 1.4;
+    font-weight: 700;
+    font-family: $geologica;
+}
+
+h1,
+.h1 {
+    font-size: 38px;
+}
+
+h2,
+.h2 {
+    font-size: 32px;
+}
+
+h3,
+.h3 {
+    font-size: 28px;
+}
+
+h4,
+.h4 {
+    font-size: 24px;
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+}
+
+h6,
+.h6 {
+    font-size: 16px;
+}
+
+.p,
+p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.small,
+small {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.large {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+a {
+    color: var(--red-color);
+    font-weight: 400;
+    text-decoration: underline;
+
+    &:active,
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}

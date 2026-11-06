@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--primary-text-color);
+    line-height: 1.5;
+    max-width: $widedesk;
+    margin: 0 auto;
+    padding: 0 $base-padding;
+}
+
+section {
+    margin: $section-gap 0;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2 {
+    margin: 0 0 $base-padding;
+}
+
+h3 {
+    margin: 0 0 $small-padding;
+}
+
+.button {
+    display: block;
+    width: fit-content;
+    padding: 7px 14px;
+    border: 1px solid var(--red-color);
+    border-radius: 5px;
+    margin: 40px 0;
+    background: var(--red-color);
+    color: var(--primary-text-color);
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        background: var(--red-hover-color);
+        border-color: var(--red-hover-color);
+    }
+
+    &:focus {
+        background: var(--primary-color);
+    }
+
+    &--outline {
+        background: transparent;
+    }
+}
+
+::placeholder {
+    color: var(--silver-color);
+}
+
+.banner {
+    display: flow-root;
+
+    h1 {
+        margin-top: 60px;
+    }
+
+    h1,
+    p,
+    .button {
+        max-width: 52%;
+    }
+
+    &__img {
+        float: right;
+        width: 40%;
+        margin: 0 0 0 4%;
+        border-radius: 260px 260px 0 0;
+    }
+
+    @include media-down($tab) {
+        h1 {
+            margin-top: $base-padding;
+            font-size: 28px;
+        }
+
+        h1,
+        p,
+        .button {
+            max-width: none;
+        }
+
+        &__img {
+            float: none;
+            display: block;
+            width: 70%;
+            margin: 0 auto $base-padding;
+        }
+    }
+}
+
+.program-title {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+
+    caption {
+        padding: $small-padding 0;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    th,
+    td {
+        padding: 8px 14px;
+        border: 1px solid var(--border-color);
+        text-align: left;
+    }
+
+    thead th {
+        background: $table-head;
+        color: $primary-light;
+    }
+
+    tfoot {
+        th,
+        td {
+            font-weight: bold;
+        }
+    }
+}
+
+.science {
+    display: flow-root;
+
+    img {
+        float: left;
+        width: 44%;
+        margin: 0 4% 0 0;
+        border-radius: $image-radius;
+
+        @include media-down($tab) {
+            float: none;
+            width: 100%;
+            margin: 0 0 $base-padding;
+        }
+    }
+}
+
+.partners {
+    padding: $section-gap $base-padding;
+    border-radius: $card-radius;
+    background: var(--surface-color);
+    text-align: center;
+
+    &__logo {
+        width: auto;
+        height: 48px;
+        margin: 16px 28px;
+        vertical-align: middle;
+    }
+}
+
+.admission {
+    &__img {
+        @include inline-column(38%);
+        border-radius: $image-radius;
+    }
+
+    &__form {
+        @include inline-column(58%);
+        margin-left: 3%;
+
+        input,
+        textarea {
+            width: 100%;
+            margin-top: 4px;
+            padding: 8px $small-padding;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--surface-color);
+            color: var(--primary-text-color);
+            font: inherit;
+
+            &:focus {
+                outline: none;
+                border-color: var(--red-color);
+            }
+        }
+
+        fieldset {
+            margin: 0 0 12px;
+            padding: $small-padding 16px 0;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+    }
+
+    @include media-down($tab) {
+        &__img {
+            display: none;
+        }
+
+        &__form {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+.contacts {
+    text-align: center;
+
+    address {
+        font-style: normal;
+    }
+}

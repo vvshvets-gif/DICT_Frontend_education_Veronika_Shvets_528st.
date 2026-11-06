@@ -1,0 +1,25 @@
+@mixin card {
+    padding: $base-padding;
+    border-radius: $card-radius;
+    border: 1px solid var(--grey-color);
+}
+
+@mixin divider($color: var(--red-color)) {
+    border-right: 1px solid $color;
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+@mixin inline-column($width) {
+    display: inline-block;
+    vertical-align: top;
+    width: $width;
+}
+
+@mixin media-down($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}

@@ -1,0 +1,40 @@
+$primary: #1d1d1d;
+$primary-light: #f8f8f8;
+$grey: #7c7c7c;
+$silver: #bfbfbf;
+$red: #ff3b39;
+$red-hover: #ff1a18;
+
+$surface-dark: #2a2a2a;
+$surface-light: #ececec;
+$line-dark: #333333;
+$line-light: #dcdcdc;
+$border-dark: #555555;
+$border-light: #bfbfbf;
+$table-head: #2c3e50;
+
+:root {
+    --primary-color: #{$primary};
+    --primary-text-color: #{$primary-light};
+    --red-color: #{$red};
+    --red-hover-color: #{$red-hover};
+    --grey-color: #{$grey};
+    --silver-color: #{$silver};
+    --surface-color: #{$surface-dark};
+    --line-color: #{$line-dark};
+    --border-color: #{$border-dark};
+    --image-filter: none;
+}
+
+[data-theme="light"] {
+    --primary-color: #{$primary-light};
+    --primary-text-color: #{$primary};
+    --red-color: #{$red};
+    --red-hover-color: #{$red-hover};
+    --grey-color: #{$grey};
+    --silver-color: #{$silver};
+    --surface-color: #{$surface-light};
+    --line-color: #{$line-light};
+    --border-color: #{$border-light};
+    --image-filter: invert(1) hue-rotate(180deg);
+}
