@@ -1,12 +1,40 @@
-$main-color: #2c3e50;
-$secondary-color: #3498db;
-$grey: #8e8e8e;
-$red: #FF3A3A;
+$primary: #1d1d1d;
+$primary-light: #f8f8f8;
+$grey: #7c7c7c;
+$silver: #bfbfbf;
+$red: #ff3b39;
+$red-hover: #ff1a18;
 
-$white: #FFFFFF;
-$light-grey: #BDBDBD;
-$bg-color: #1F1F1F;
-$surface-color: #2A2A2A;
-$line-color: #333333;
-$table-border-color: #444444;
-$field-border-color: #555555;
+$surface-dark: #2a2a2a;
+$surface-light: #ececec;
+$line-dark: #333333;
+$line-light: #dcdcdc;
+$border-dark: #555555;
+$border-light: #bfbfbf;
+$table-head: #2c3e50;
+
+:root {
+    --primary-color: #{$primary};
+    --primary-text-color: #{$primary-light};
+    --red-color: #{$red};
+    --red-hover-color: #{$red-hover};
+    --grey-color: #{$grey};
+    --silver-color: #{$silver};
+    --surface-color: #{$surface-dark};
+    --line-color: #{$line-dark};
+    --border-color: #{$border-dark};
+    --image-filter: none;
+}
+
+[data-theme="light"] {
+    --primary-color: #{$primary-light};
+    --primary-text-color: #{$primary};
+    --red-color: #{$red};
+    --red-hover-color: #{$red-hover};
+    --grey-color: #{$grey};
+    --silver-color: #{$silver};
+    --surface-color: #{$surface-light};
+    --line-color: #{$line-light};
+    --border-color: #{$border-light};
+    --image-filter: invert(1) hue-rotate(180deg);
+}
